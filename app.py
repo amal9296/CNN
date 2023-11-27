@@ -228,7 +228,7 @@ def main():
 
         
         st.write('Upload tumer data')
-        model_name = 'CNN_tumor.pkl'
+        model_name = 'CNN_tumor2.pkl'
         
         input_data = Basic_functions.upload_image()
         if input_data is not None:
@@ -236,7 +236,7 @@ def main():
 
         but = st.button("Predict", type="primary")    
         if but:
-            model = Basic_functions.open_model('CNN_tumor.pkl')
+            model = Basic_functions.open_model('CNN_tumor2.pkl')
             Basic_functions.pred(input_data,model,model_name)       
         
     elif option == 'Sentiment analysis':
