@@ -28,7 +28,7 @@ class Basic_functions:
 
     def pred(input_data,model,model_name):
 
-        if model_name == 'CNN_tumor.pkl':
+        if model_name == 'CNN_tumor2.pkl':
 
             img=Image.fromarray(input_data)
             img=img.resize((128,128))
